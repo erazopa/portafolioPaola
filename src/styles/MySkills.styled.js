@@ -7,6 +7,12 @@ grid-template-columns: auto auto auto ;
 grid-gap: 2rem;
 padding:0 5%;
 margin-left:8rem;
+
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    margin-left: 0px;
+    display:flex;
+    flex-direction: ${({ responsiveDirection }) => responsiveDirection};
+  }
 `
 export const SkillsCard = styled.div`
 width: 230px;

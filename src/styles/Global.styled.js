@@ -37,8 +37,11 @@ export const FlexContainer = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    display: ${({ responsiveFlex }) => (responsiveFlex ? "flex" : "block")};
-
+    display: ${({ responsiveFlex }) => responsiveFlex};
+    margin:  ${({ responsiveMargin }) => responsiveMargin};
+    grid-template-columns:  ${({ responsivegrid }) => responsivegrid};
+    margin:  ${({ responsivemargin }) => responsivemargin};
+    padding:  ${({ responsivepadding }) => responsivepadding};
     flex-direction: ${({ responsiveDirection }) => responsiveDirection};
   }
 `;
@@ -75,6 +78,7 @@ export const Heading = styled(PaddingContainer)`
           return;
       }
     }};
+    margin-left:${({ responsiveleft }) => responsiveleft};
   }
 `;
 
@@ -104,6 +108,10 @@ export const IconContainer = styled.div`
         return;
     }
   }};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    margin-left:${({responsiveleft})=> responsiveleft}  ;
+    margin-right: ${({responsiveright})=> responsiveright};
 `;
 
 export const Button = styled.a`
@@ -141,6 +149,10 @@ export const Button2 = styled.a`
   margin-left: 135px;
   margin-bottom:20px;
 font-size:20px;
+
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  margin-left: ${({ responsiveleft }) => responsiveleft};
+  
   &:hover{
   color: ${({ theme }) => theme.colors.primary_light};
   background-color:${({ theme }) => theme.colors.white};

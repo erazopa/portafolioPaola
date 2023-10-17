@@ -45,7 +45,7 @@ const Footer = ({}) => {
         align="center"
         top="0.5rem"
       >
-       Mi <BlueText>CV</BlueText>
+        Mi <BlueText>CV</BlueText>
       </Heading>
 
       <PaddingContainer top="3rem">
@@ -56,22 +56,25 @@ const Footer = ({}) => {
             initial="hidden"
             whileInView="visible"
           >
-
-            <Button2  href="CV Paola.pdf" download>Curriculum Vital</Button2>
+            <Button2 
+            responsiveleft="34px"
+            href="CV Paola.pdf" download>
+              Curriculum Vital
+            </Button2>
 
             <FlexContainer gap="20px" responsiveFlex>
               <IconContainer
+              responsiveleft="110px"
                 left="205px"
                 right="-195px"
                 bottom="20px"
                 align="center"
-               
                 size="1.5rem"
               >
                 <a
-                href="https://www.linkedin.com/in/paola-adriana-erazo-52352b278/"
-                target="_blank"
-                color="blue"
+                  href="https://www.linkedin.com/in/paola-adriana-erazo-52352b278/"
+                  target="_blank"
+                  color="blue"
                 >
                   <BsLinkedin />
                 </a>
@@ -82,21 +85,24 @@ const Footer = ({}) => {
                 right="-195px"
                 bottom="20px"
                 align="center"
-                
                 size="1.5rem"
               >
                 <a
-
-                href="https://github.com/erazopa"
-                target="_blank"
-                color="blue"
+                  href="https://github.com/erazopa"
+                  target="_blank"
+                  color="blue"
                 >
-                <BsGithub />
+                  <BsGithub />
                 </a>
               </IconContainer>
             </FlexContainer>
 
-            <FlexContainer justify="center" responsiveFlex>
+            <FlexContainer
+              justify="center"
+              responsiveFlex="none"
+              responsivegrid="auto auto"
+              responsivemargin="0px 20px"
+            >
               {navLinks.map((link) => (
                 <Button
                   key={link.id}

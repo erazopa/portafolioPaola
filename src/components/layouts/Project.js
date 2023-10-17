@@ -23,10 +23,10 @@ import { BsGithub } from "react-icons/bs";
 
 const Project = ({ data }) => {
   return (
-    <FlexContainer fullWidthChild>
+    <FlexContainer responsiveFlex="block" fullWidthChild>
       {/* --left-section-project-content-- */}
       <div>
-        <FlexContainer align="center" gap="1rem">
+        <FlexContainer responsiveFlex="block" align="center" gap="1rem">
           <Heading as="h3" size="h3" bottom="1rem">
             {data.project_name}
           </Heading>
@@ -39,7 +39,7 @@ const Project = ({ data }) => {
         </FlexContainer>
 
         <PaddingContainer top="1rem">
-          <FlexContainer gap="1.5rem">
+          <FlexContainer responsiveFlex="block" gap="1.5rem">
             {data.tech_stack.map((stack) => (
               <TechStackCard>{stack}</TechStackCard>
             ))}

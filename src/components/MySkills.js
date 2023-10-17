@@ -25,12 +25,18 @@ const MySkills = () => {
    top="10%"
    bottom="10%"
    >
-    <Heading  align="center" as="h2" size= "h2" top="0.5rem" left="4rem" bottom="2rem">
+    <Heading
+    responsiveleft="-100px;"
+    align="center" as="h2" size= "h2" top="0.5rem" left="4rem" bottom="2rem">
     Mis <BlueText>Habilidades</BlueText>
 </Heading>
-<FlexContainer fullWidthChild>
+<FlexContainer
+responsiveFlex="flex"
+fullWidthChild>
     {/* --left-section-- */}
-    <SkillsCardContainer>
+    <SkillsCardContainer resresponsivetop="10px"
+    responsiveDirection="column"
+    >
 {Skills.map((skill) => (
 <SkillsCard>
     <IconContainer color="blue" size="5rem">
