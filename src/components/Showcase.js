@@ -54,7 +54,7 @@ const Showcase = () => {
           </Heading>
 
           <Heading as="h2" size="h2" top="0.5rem" bottom="1rem">
-           Soy <BlueText>Paola Adrian Erazo</BlueText>
+           Soy <BlueText>Paola Adriana Erazo</BlueText>
           </Heading>
 
           <Heading as="h3" size="h3">
